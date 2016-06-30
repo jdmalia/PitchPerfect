@@ -26,18 +26,25 @@ class ViewController: UIViewController {
 
     @IBAction func recordAudio(sender: AnyObject) {
         recordButton.enabled = false
+        recordButton.hidden = true
         stopRecordingButton.enabled = true
+        stopRecordingButton.hidden = false
         recordingLabel.text = "Recording in progress..."
     }
     
     @IBAction func stopRecording(sender: AnyObject) {
         recordButton.enabled = true
+        recordButton.hidden = false
         stopRecordingButton.enabled = false
-        recordingLabel.text = "Tap to Record"
+        stopRecordingButton.hidden = true
+        recordingLabel.text = "Tap to record"
     }
     
     override func viewWillAppear(animated: Bool) {
+        recordButton.enabled = true
+        recordButton.hidden = false
         stopRecordingButton.enabled = false
+        stopRecordingButton.hidden = true
     }
 }
 
