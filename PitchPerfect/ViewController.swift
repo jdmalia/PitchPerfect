@@ -17,6 +17,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        recordButton.enabled = true
+        recordButton.hidden = false
+        stopRecordingButton.enabled = false
+        stopRecordingButton.hidden = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -41,10 +45,6 @@ class ViewController: UIViewController {
     }
     
     override func viewWillAppear(animated: Bool) {
-        recordButton.enabled = true
-        recordButton.hidden = false
-        stopRecordingButton.enabled = false
-        stopRecordingButton.hidden = true
     }
 }
 
