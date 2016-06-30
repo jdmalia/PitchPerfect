@@ -15,7 +15,7 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     @IBOutlet weak var recordButton: UIButton!
     @IBOutlet weak var stopRecordingButton: UIButton!
     
-    var audioRecoder: AVAudioRecorder!
+    var audioRecorder: AVAudioRecorder!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,11 +47,11 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
         let session = AVAudioSession.sharedInstance()
         try! session.setCategory(AVAudioSessionCategoryPlayAndRecord)
         
-        try! audioRecoder = AVAudioRecorder(URL: filePath!, settings: [:])
-        audioRecoder.delegate = self
-        audioRecoder.meteringEnabled = true
-        audioRecoder.prepareToRecord()
-        audioRecoder.record()
+        try! audioRecorder = AVAudioRecorder(URL: filePath!, settings: [:])
+        audioRecorder.delegate = self
+        audioRecorder.meteringEnabled = true
+        audioRecorder.prepareToRecord()
+        audioRecorder.record()
     }
     
     @IBAction func stopRecording(sender: AnyObject) {
@@ -68,7 +68,7 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     func audioRecorderDidFinishRecording(recorder: AVAudioRecorder, successfully flag: Bool) {
         print("AVAudioRecoder finished saving recording.")
         if flag {
-            self.performSegueWithIdentifier("stopRecording", sender: audioRecoder.url)
+            self.performSegueWithIdentifier("stopRecording", sender: audioRecorder.url)
         } else {
             print("Saving of recording failed")
         }
