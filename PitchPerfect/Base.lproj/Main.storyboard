@@ -17,8 +17,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to record" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Bf-PT-3fc">
-                                <rect key="frame" x="249" y="370" width="103" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Record!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Bf-PT-3fc">
+                                <rect key="frame" x="270" y="362" width="60" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -43,16 +43,15 @@
                                 </state>
                                 <connections>
                                     <action selector="stopRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X3x-fC-A1s"/>
-                                    <segue destination="K4h-UF-UPc" kind="show" id="uLx-VJ-ya3"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="0Bf-PT-3fc" firstAttribute="top" secondItem="yPa-6C-w2o" secondAttribute="bottom" constant="20" id="1OA-ze-E7e"/>
                             <constraint firstItem="rLq-lC-1MP" firstAttribute="centerY" secondItem="yPa-6C-w2o" secondAttribute="centerY" id="O2M-Bx-YvH"/>
                             <constraint firstItem="yPa-6C-w2o" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YXb-Qj-3TF"/>
-                            <constraint firstItem="0Bf-PT-3fc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Yel-l6-tlF"/>
+                            <constraint firstItem="0Bf-PT-3fc" firstAttribute="centerX" secondItem="yPa-6C-w2o" secondAttribute="centerX" id="acR-Uf-21o"/>
+                            <constraint firstItem="0Bf-PT-3fc" firstAttribute="top" secondItem="yPa-6C-w2o" secondAttribute="bottom" constant="12" id="bnu-2g-lbK"/>
                             <constraint firstItem="yPa-6C-w2o" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="uzS-oF-e3t"/>
                             <constraint firstItem="rLq-lC-1MP" firstAttribute="centerX" secondItem="yPa-6C-w2o" secondAttribute="centerX" id="xkg-Ml-Fky"/>
                         </constraints>
@@ -62,16 +61,17 @@
                         <outlet property="recordButton" destination="yPa-6C-w2o" id="slo-B0-vvr"/>
                         <outlet property="recordingLabel" destination="0Bf-PT-3fc" id="DAv-GO-0UJ"/>
                         <outlet property="stopRecordingButton" destination="rLq-lC-1MP" id="Pzm-lB-u4l"/>
+                        <segue destination="K4h-UF-UPc" kind="show" identifier="stopRecording" id="Osg-xF-Xuh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1081" y="587"/>
         </scene>
-        <!--View Controller-->
+        <!--Play Sounds View Controller-->
         <scene sceneID="25r-u4-pZE">
             <objects>
-                <viewController id="K4h-UF-UPc" sceneMemberID="viewController">
+                <viewController id="K4h-UF-UPc" customClass="PlaySoundsViewController" customModule="PitchPerfect" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3fN-0x-bZD"/>
                         <viewControllerLayoutGuide type="bottom" id="JlS-GY-h0F"/>
