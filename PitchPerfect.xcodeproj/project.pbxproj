@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		96822E8A1D26FC0D00BD8140 /* PlaySoundsViewController+Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96822E891D26FC0D00BD8140 /* PlaySoundsViewController+Audio.swift */; };
 		96E5F1ED1D2456B100D5FB31 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E5F1EC1D2456B100D5FB31 /* AppDelegate.swift */; };
 		96E5F1EF1D2456B100D5FB31 /* RecordSoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E5F1EE1D2456B100D5FB31 /* RecordSoundsViewController.swift */; };
 		96E5F1F21D2456B100D5FB31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96E5F1F01D2456B100D5FB31 /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		96822E891D26FC0D00BD8140 /* PlaySoundsViewController+Audio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PlaySoundsViewController+Audio.swift"; sourceTree = "<group>"; };
 		96E5F1E91D2456AF00D5FB31 /* PitchPerfect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PitchPerfect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96E5F1EC1D2456B100D5FB31 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96E5F1EE1D2456B100D5FB31 /* RecordSoundsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordSoundsViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				96E5F1EC1D2456B100D5FB31 /* AppDelegate.swift */,
 				96E5F1EE1D2456B100D5FB31 /* RecordSoundsViewController.swift */,
 				96F247D71D259C42003C8963 /* PlaySoundsViewController.swift */,
+				96822E891D26FC0D00BD8140 /* PlaySoundsViewController+Audio.swift */,
 				96E5F1F01D2456B100D5FB31 /* Main.storyboard */,
 				96E5F1F31D2456B100D5FB31 /* Assets.xcassets */,
 				96E5F1F51D2456B100D5FB31 /* LaunchScreen.storyboard */,
@@ -191,18 +194,21 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Jason malia";
 				TargetAttributes = {
 					96E5F1E81D2456AF00D5FB31 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 					};
 					96E5F1FC1D2456B200D5FB31 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = 96E5F1E81D2456AF00D5FB31;
 					};
 					96E5F2071D2456B200D5FB31 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = 96E5F1E81D2456AF00D5FB31;
 					};
 				};
@@ -260,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				96E5F1EF1D2456B100D5FB31 /* RecordSoundsViewController.swift in Sources */,
+				96822E8A1D26FC0D00BD8140 /* PlaySoundsViewController+Audio.swift in Sources */,
 				96F247D81D259C42003C8963 /* PlaySoundsViewController.swift in Sources */,
 				96E5F1ED1D2456B100D5FB31 /* AppDelegate.swift in Sources */,
 			);
@@ -334,7 +341,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Jason Malia (Y5P3ZR8K8U)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Jason Malia (Y5P3ZR8K8U)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -353,7 +361,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -380,7 +388,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Jason Malia (Y5P3ZR8K8U)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Jason Malia (Y5P3ZR8K8U)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -393,7 +402,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -409,6 +418,9 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jasonmalia.PitchPerfect;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "40334b45-78eb-474d-a7f6-ac8506251576";
+				PROVISIONING_PROFILE_SPECIFIER = "CUNEL8BQ4Q/iOS Dev Provisioning Profile";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -420,6 +432,10 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jasonmalia.PitchPerfect;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "40334b45-78eb-474d-a7f6-ac8506251576";
+				PROVISIONING_PROFILE_SPECIFIER = "CUNEL8BQ4Q/iOS Dev Provisioning Profile";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -431,6 +447,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jasonmalia.PitchPerfectTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PitchPerfect.app/PitchPerfect";
 			};
 			name = Debug;
@@ -443,6 +460,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jasonmalia.PitchPerfectTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PitchPerfect.app/PitchPerfect";
 			};
 			name = Release;
@@ -454,6 +473,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jasonmalia.PitchPerfectUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = PitchPerfect;
 			};
 			name = Debug;
@@ -465,6 +485,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jasonmalia.PitchPerfectUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = PitchPerfect;
 			};
 			name = Release;
