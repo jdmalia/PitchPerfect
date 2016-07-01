@@ -48,7 +48,6 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
         try! session.setCategory(AVAudioSessionCategoryPlayAndRecord)
         
         try! audioRecorder = AVAudioRecorder(url: filePath!, settings: [:])
-        print("NOW HERE!!!!!!!!!!!!!")
         print(audioRecorder.url)
         audioRecorder.delegate = self
         audioRecorder.isMeteringEnabled = true
@@ -69,7 +68,6 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     }
     
     func audioRecorderDidFinishRecording(_ recorder: AVAudioRecorder, successfully flag: Bool) {
-        print("AVAudioRecoder finished saving recording.")
         if (flag) {
             self.performSegue(withIdentifier: "stopRecording", sender: audioRecorder.url)
         } else {
